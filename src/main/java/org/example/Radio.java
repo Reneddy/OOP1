@@ -1,4 +1,5 @@
 package org.example;
+
 public class Radio {
     private int currentStation;
     private int currentVolume;
@@ -24,44 +25,40 @@ public class Radio {
 
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume < 0) {
-           currentVolume = 0;
+            currentVolume = 0;
         }
         if (currentVolume > 10) {
-           currentVolume = 10;
+            currentVolume = 10;
         }
         this.currentVolume = currentVolume;
     }
 
 
-    public void nextStation () {
-        if (currentStation !=9) {
+    public void nextStation() {
+        if (currentStation != 9) {
             currentStation++;
         } else {
-            currentStation=0;
+            currentStation = 0;
         }
     }
 
-    public void prevStation () {
-        if (currentStation !=0) {
+    public void prevStation() {
+        if (currentStation != 0) {
             currentStation--;
         } else {
-            currentStation=9;
+            currentStation = 9;
         }
     }
 
-    public void turnUpTheVolume () {
-        if (currentVolume !=10) {
+    public void turnUpTheVolume() {
+        if (currentVolume != 10) {
             currentVolume++;
-        } else {
-            currentVolume=10;
         }
     }
 
-    public void turnDownTheVolume () {
-        if (currentVolume !=0) {
+    public void turnDownTheVolume() {
+        if (currentVolume != 0) {
             currentVolume--;
-        } else {
-            currentVolume=0;
         }
     }
 }
