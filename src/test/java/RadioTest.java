@@ -269,7 +269,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnUpTheVolume () {
+    public void TurnUpTheVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(5);
         radio.turnUpTheVolume();
@@ -279,7 +279,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnUpTheVolumeFrom0 () {
+    public void TurnUpTheVolumeFrom0() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
         radio.turnUpTheVolume();
@@ -287,8 +287,9 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void TurnUpTheVolumeFrom1 () {
+    public void TurnUpTheVolumeFrom1() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
         radio.turnUpTheVolume();
@@ -298,7 +299,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnUpTheVolumeFrom9 () {
+    public void TurnUpTheVolumeFrom9() {
         Radio radio = new Radio();
         radio.setCurrentVolume(9);
         radio.turnUpTheVolume();
@@ -308,7 +309,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnUpTheVolumeFrom10 () {
+    public void TurnUpTheVolumeFrom10() {
         Radio radio = new Radio();
         radio.setCurrentVolume(10);
         radio.turnUpTheVolume();
@@ -318,7 +319,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnDownTheVolume () {
+    public void TurnDownTheVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(5);
         radio.turnDownTheVolume();
@@ -328,7 +329,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnDownTheVolumeFrom0 () {
+    public void TurnDownTheVolumeFrom0() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
         radio.turnDownTheVolume();
@@ -336,8 +337,9 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void TurnDownTheVolumeFrom1 () {
+    public void TurnDownTheVolumeFrom1() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
         radio.turnDownTheVolume();
@@ -347,7 +349,7 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnDownTheVolumeFrom9 () {
+    public void TurnDownTheVolumeFrom9() {
         Radio radio = new Radio();
         radio.setCurrentVolume(9);
         radio.turnDownTheVolume();
@@ -357,11 +359,11 @@ public class RadioTest {
     }
 
     @Test
-    public void TurnDownTheVolumeFrom10 () {
+    public void TurnDownTheVolumeFrom10() {
         Radio radio = new Radio();
         radio.setCurrentVolume(10);
         radio.turnDownTheVolume();
-        int expected =9;
+        int expected = 9;
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
