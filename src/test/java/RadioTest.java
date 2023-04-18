@@ -3,13 +3,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
-    Radio radio = new Radio(15, 0,0, 100);
+    Radio radio = new Radio(15, 0, 0, 100);
 
     @Test
     public void StationsNumber() {
         radio.getStationsNumber();
-        Assertions.assertEquals(15,radio.getStationsNumber());
+        Assertions.assertEquals(15, radio.getStationsNumber());
     }
+
     @Test
     public void ValidStation() {
         radio.setCurrentStation(5);

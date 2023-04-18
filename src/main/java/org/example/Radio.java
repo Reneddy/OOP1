@@ -1,16 +1,16 @@
 package org.example;
 
 public class Radio {
-    private int stationsNumber=10;
-    private int minStation=0;
-    private int maxStation= stationsNumber-1;
-    private int currentStation=minStation;
-    private int minVolume=0;
-    private int maxVolume=100;
-    private int currentVolume=minVolume;
+    private int stationsNumber = 10;
+    private int minStation = 0;
+    private int maxStation = stationsNumber - 1;
+    private int currentStation = minStation;
+    private int minVolume = 0;
+    private int maxVolume = 100;
+    private int currentVolume = minVolume;
 
     public Radio(int stationsNumber, int minStation, int minVolume, int maxVolume) {
-        this.stationsNumber=stationsNumber;
+        this.stationsNumber = stationsNumber;
     }
 
     public int getStationsNumber() {
