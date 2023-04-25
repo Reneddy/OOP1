@@ -52,7 +52,7 @@ public class RadioTest {
 
     @Test
     public void LowerLimitStation3() {
-        radio.setCurrentStation(radio.getMinStation() + 1);
+        radio.setCurrentStation(radio.getMinStation()+1);
         Assertions.assertEquals(1, radio.getCurrentStation());
     }
 
