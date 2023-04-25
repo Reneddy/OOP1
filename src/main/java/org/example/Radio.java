@@ -1,21 +1,60 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-
 public class Radio {
-    private int stationsNumber = 10;
+    private int stationsNumber;
     private int minStation = 0;
-    private int maxStation = stationsNumber - 1;
-    private int currentStation = minStation;
+    private int maxStation;
     private int minVolume = 0;
     private int maxVolume = 100;
-    private int currentVolume = minVolume;
+    private int currentStation;
+    private int currentVolume;
+
+    public Radio() {
+        stationsNumber = 10;
+        maxStation = 9;
+    }
+
+    public Radio(int stationsNumber) {
+        this.stationsNumber = stationsNumber;
+        maxStation = stationsNumber - 1;
+    }
+
+    public int getStationsNumber() {
+        return stationsNumber;
+    }
+
+    public int getMinStation() {
+        return minStation;
+    }
+
+    public int getMaxStation() {
+        return maxStation;
+    }
+
+    public int getMinVolume() {
+        return minVolume;
+    }
+
+    public int getMaxVolume() {
+        return maxVolume;
+    }
+
+    public int getCurrentStation() {
+        return currentStation;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
+    public void setStationsNumber(int stationsNumber) {
+        if (stationsNumber == 0) {
+            stationsNumber = 10;
+        }
+        this.stationsNumber = stationsNumber;
+        this.maxStation = stationsNumber - 1;
+    }
+
 
     public void setCurrentStation(int currentStation) {
         if (currentStation < minStation) {
