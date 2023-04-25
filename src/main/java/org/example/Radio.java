@@ -1,15 +1,16 @@
 package org.example;
 
 public class Radio {
-    private int stationsNumber=10;
+    private int stationsNumber = 10;
     private int minStation = 0;
-    private int maxStation=stationsNumber-1;
+    private int maxStation = stationsNumber - 1;
     private int minVolume = 0;
     private int maxVolume = 100;
     private int currentStation;
     private int currentVolume;
 
-    public Radio() {}
+    public Radio() {
+    }
 
     public Radio(int stationsNumber) {
         this.stationsNumber = stationsNumber;
